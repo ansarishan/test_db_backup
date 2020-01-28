@@ -11,7 +11,7 @@ TEMP_BACKUP="latest_backup.sql"
 BACKUP_DIR=$(date +"%Y/%m")
 
 # Delete older files
-find /api -type f -mtime +0 -exec rm -f {} \; 
+find /api -type f -mtime 0 -exec rm -f {} \; 
 # Check current Git status and update
 ${GIT} status
 ${GIT} pull origin HEAD
