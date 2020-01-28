@@ -19,9 +19,9 @@ ${MYSQL_DUMP} -u "$CRON_USER" $DB_NAME > $TEMP_BACKUP &
 wait
 
 # Make backup directory if not exists (format: {year}/{month}/)
-if [ ! -d "$BACKUP_DIR" ]; then
-  mkdir -p $BACKUP_DIR
-fi
+#if [ ! -d "$BACKUP_DIR" ]; then
+ # mkdir -p $BACKUP_DIR
+#fi
 
 # Compress SQL dump
 tar -cvzf api_db/$DB_NAME-$NOW-sql.tar.gz $TEMP_BACKUP
