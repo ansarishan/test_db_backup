@@ -1,7 +1,7 @@
 #!/bin/sh
 # Set variables
-DB_NAME="foo"
-CRON_USER="bar"
+DB_NAME="api_db"
+CRON_USER="cron_user"
 
 FULLDATE=$(date +"%Y-%d-%m %H:%M")
 NOW=$(date +"%Y-%m-%d-%H-%M")
