@@ -24,7 +24,7 @@ if [ ! -d "$BACKUP_DIR" ]; then
 fi
 
 # Compress SQL dump
-tar -cvzf $BACKUP_DIR/$DB_NAME-$NOW-sql.tar.gz $TEMP_BACKUP
+tar -cvzf api_db/$DB_NAME-$NOW-sql.tar.gz $TEMP_BACKUP
 
 # Remove original SQL dump
 rm -f $TEMP_BACKUP
